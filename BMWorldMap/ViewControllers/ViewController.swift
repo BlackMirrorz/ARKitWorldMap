@@ -56,12 +56,16 @@ class ViewController: UIViewController {
         //1. Create A Tap Gesture To Place A Custom ARAnchor Which We Can Check To See If Gets Saved Later
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(placeAnchor(_:)))
         self.view.addGestureRecognizer(tapGesture)
+        
+        //2. Create A Scale Gesture So We Can Scale Our Model
+        let scaleGesture = UIPinchGestureRecognizer(target: self, action: #selector(scaleModel(_:)))
+        self.view.addGestureRecognizer(scaleGesture)
+        
         setupARSession()
         super.viewDidLoad()
         
     }
     
-
     override func viewDidDisappear(_ animated: Bool) { }
     
     //------------------------
