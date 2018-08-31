@@ -23,6 +23,10 @@
 		AF3EB96C2138E301009DF2DF /* ViewController+Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EB96B2138E301009DF2DF /* ViewController+Delegation.swift */; };
 		AF3EB96E2138E3F5009DF2DF /* BMRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EB96D2138E3F5009DF2DF /* BMRoundButton.swift */; };
 		AF3EB9722138E624009DF2DF /* Skia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF3EB9712138E624009DF2DF /* Skia.ttf */; };
+		AF3EB9A1213904CF009DF2DF /* bm_44.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3EB99D213904CF009DF2DF /* bm_44.png */; };
+		AF3EB9A2213904CF009DF2DF /* bm_64.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3EB99E213904CF009DF2DF /* bm_64.png */; };
+		AF3EB9A3213904CF009DF2DF /* bm_22.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3EB99F213904CF009DF2DF /* bm_22.png */; };
+		AF3EB9A4213904CF009DF2DF /* bm_320.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3EB9A0213904CF009DF2DF /* bm_320.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		AF3EB96B2138E301009DF2DF /* ViewController+Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Delegation.swift"; sourceTree = "<group>"; };
 		AF3EB96D2138E3F5009DF2DF /* BMRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRoundButton.swift; sourceTree = "<group>"; };
 		AF3EB9712138E624009DF2DF /* Skia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skia.ttf; sourceTree = "<group>"; };
+		AF3EB99D213904CF009DF2DF /* bm_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bm_44.png; sourceTree = "<group>"; };
+		AF3EB99E213904CF009DF2DF /* bm_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bm_64.png; sourceTree = "<group>"; };
+		AF3EB99F213904CF009DF2DF /* bm_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bm_22.png; sourceTree = "<group>"; };
+		AF3EB9A0213904CF009DF2DF /* bm_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bm_320.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 		AF3EB9222138B46B009DF2DF /* BMWorldMap */ = {
 			isa = PBXGroup;
 			children = (
+				AF3EB9A5213904E0009DF2DF /* Icons */,
 				AF3EB96F2138E40F009DF2DF /* Custom Views */,
 				AF3EB95F2138DE1D009DF2DF /* Apple Focus Square */,
 				AF3EB95D2138DCA4009DF2DF /* ARSettings */,
@@ -145,6 +154,17 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		AF3EB9A5213904E0009DF2DF /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EB99F213904CF009DF2DF /* bm_22.png */,
+				AF3EB99D213904CF009DF2DF /* bm_44.png */,
+				AF3EB99E213904CF009DF2DF /* bm_64.png */,
+				AF3EB9A0213904CF009DF2DF /* bm_320.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,8 +225,12 @@
 			files = (
 				AF3EB9262138B46B009DF2DF /* art.scnassets in Resources */,
 				AF3EB9302138B46B009DF2DF /* LaunchScreen.storyboard in Resources */,
+				AF3EB9A1213904CF009DF2DF /* bm_44.png in Resources */,
+				AF3EB9A2213904CF009DF2DF /* bm_64.png in Resources */,
 				AF3EB92D2138B46B009DF2DF /* Assets.xcassets in Resources */,
+				AF3EB9A4213904CF009DF2DF /* bm_320.png in Resources */,
 				AF3EB9722138E624009DF2DF /* Skia.ttf in Resources */,
+				AF3EB9A3213904CF009DF2DF /* bm_22.png in Resources */,
 				AF3EB92B2138B46B009DF2DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
