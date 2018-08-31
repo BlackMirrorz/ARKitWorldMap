@@ -51,6 +51,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        NotificationCenter.default.addObserver(self, selector: #selector(importWorldMap(_:)), name: NSNotification.Name(rawValue: "MapReceived"), object: nil)
+        
         //1. Create A Tap Gesture To Place A Custom ARAnchor Which We Can Check To See If Gets Saved Later
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(placeAnchor(_:)))
         self.view.addGestureRecognizer(tapGesture)
@@ -59,16 +61,8 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(importWorldMap(_:)), name: NSNotification.Name(rawValue: "MapReceived"), object: nil)
-       
-        
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        
-    }
+
+    override func viewDidDisappear(_ animated: Bool) { }
     
     //------------------------
     //MARK: - User Interaction
