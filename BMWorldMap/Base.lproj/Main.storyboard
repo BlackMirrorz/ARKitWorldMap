@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U7a-uf-A7f">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Skia.ttf">
+            <string>Skia-Regular_Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9nM-AV-KTI">
+            <objects>
+                <viewController id="U7a-uf-A7f" customClass="ViewController" customModule="BMWorldMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="arf-G9-ULL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCI-ah-KWp">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBB-pS-cch" customClass="BMRoundButton" customModule="BMWorldMap">
+                                <rect key="frame" x="307" y="52" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="q4E-UL-mkT"/>
+                                    <constraint firstAttribute="height" constant="60" id="y4N-mV-YUP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Skia-Regular_Bold" family="Skia" pointSize="14"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveWorldMap" destination="U7a-uf-A7f" eventType="touchUpInside" id="LdP-7f-nul"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myl-SG-KgK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mapping Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhT-N7-jfA">
+                                        <rect key="frame" x="135.5" y="5" width="104" height="14"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular_Bold" family="Skia" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AhT-N7-jfA" firstAttribute="centerY" secondItem="myl-SG-KgK" secondAttribute="centerY" id="BAn-td-ZYB"/>
+                                    <constraint firstItem="AhT-N7-jfA" firstAttribute="centerX" secondItem="myl-SG-KgK" secondAttribute="centerX" id="Nj2-Nw-fu4"/>
+                                    <constraint firstAttribute="height" constant="24" id="nI7-sG-QM9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="vn0-c2-k9J"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCN-Cs-R8z">
+                                <rect key="frame" x="0.0" y="643" width="375" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparing Device..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cy-y3-xTh">
+                                        <rect key="frame" x="125" y="5" width="125" height="14"/>
+                                        <fontDescription key="fontDescription" name="Skia-Regular_Bold" family="Skia" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="42D-5t-pFc"/>
+                                    <constraint firstItem="7Cy-y3-xTh" firstAttribute="centerX" secondItem="sCN-Cs-R8z" secondAttribute="centerX" id="EWv-w8-o67"/>
+                                    <constraint firstItem="7Cy-y3-xTh" firstAttribute="centerY" secondItem="sCN-Cs-R8z" secondAttribute="centerY" id="Q6S-Xl-iI4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="UI4-YY-655"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Jco-wz-tB5"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sCN-Cs-R8z" firstAttribute="leading" secondItem="gkQ-IR-x7Y" secondAttribute="leading" id="Bpk-OU-MhC"/>
+                            <constraint firstItem="YBB-pS-cch" firstAttribute="top" secondItem="myl-SG-KgK" secondAttribute="bottom" constant="8" id="MqR-Aj-0Fv"/>
+                            <constraint firstItem="gkQ-IR-x7Y" firstAttribute="trailing" secondItem="ZCI-ah-KWp" secondAttribute="trailing" id="OWN-xT-jXi"/>
+                            <constraint firstItem="ZCI-ah-KWp" firstAttribute="bottom" secondItem="gkQ-IR-x7Y" secondAttribute="bottom" id="OaS-hl-zsS"/>
+                            <constraint firstItem="gkQ-IR-x7Y" firstAttribute="trailing" secondItem="YBB-pS-cch" secondAttribute="trailing" constant="8" id="RIY-14-LCY"/>
+                            <constraint firstItem="ZCI-ah-KWp" firstAttribute="top" secondItem="myl-SG-KgK" secondAttribute="bottom" id="Rl6-o9-fo4"/>
+                            <constraint firstItem="myl-SG-KgK" firstAttribute="leading" secondItem="gkQ-IR-x7Y" secondAttribute="leading" id="akK-2r-eRG"/>
+                            <constraint firstItem="myl-SG-KgK" firstAttribute="trailing" secondItem="gkQ-IR-x7Y" secondAttribute="trailing" id="f2Z-bH-aWM"/>
+                            <constraint firstItem="myl-SG-KgK" firstAttribute="top" secondItem="gkQ-IR-x7Y" secondAttribute="top" id="mLb-gC-fNE"/>
+                            <constraint firstItem="sCN-Cs-R8z" firstAttribute="trailing" secondItem="gkQ-IR-x7Y" secondAttribute="trailing" id="oun-DY-ne2"/>
+                            <constraint firstItem="ZCI-ah-KWp" firstAttribute="leading" secondItem="gkQ-IR-x7Y" secondAttribute="leading" id="srL-J8-eE3"/>
+                            <constraint firstItem="sCN-Cs-R8z" firstAttribute="bottom" secondItem="gkQ-IR-x7Y" secondAttribute="bottom" id="ugV-X1-q42"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gkQ-IR-x7Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="augmentedRealityView" destination="ZCI-ah-KWp" id="a2F-zW-uig"/>
+                        <outlet property="mappingLabelView" destination="myl-SG-KgK" id="ytO-0p-zRk"/>
+                        <outlet property="mappingStatusLabel" destination="AhT-N7-jfA" id="Mfd-bb-xws"/>
+                        <outlet property="sessionLabelView" destination="sCN-Cs-R8z" id="SHi-bS-tSJ"/>
+                        <outlet property="shareMapButton" destination="YBB-pS-cch" id="1KK-zS-CkU"/>
+                        <outlet property="statusLabel" destination="7Cy-y3-xTh" id="7wE-L9-MFm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32s-Hd-04Y" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157.5999999999999" y="-582.45877061469275"/>
+        </scene>
+    </scenes>
+</document>
