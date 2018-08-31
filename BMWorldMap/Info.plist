@@ -14,9 +14,6 @@
 			<key>CFBundleTypeIconFiles</key>
 			<array>
 				<string>bm_320.png</string>
-				<string>bm_64.png</string>
-				<string>bm_44.png</string>
-				<string>bm_22.png</string>
 			</array>
 			<key>CFBundleTypeName</key>
 			<string>BlackMirrorz ARWorldMap</string>
@@ -78,6 +75,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UISupportsDocumentBrowser</key>
+	<true/>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -102,7 +101,5 @@
 			</dict>
 		</dict>
 	</array>
-	<key>UISupportsDocumentBrowser</key>
-	<true/>
 </dict>
 </plist>
